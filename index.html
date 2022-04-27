@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý cửa hàng xe</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>Xe</span> máy</a>
+
+        <nav class="navbar">
+            <a href="#home">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Bảng giá xe máy</a>
+            <a href="#services">Dịch vụ</a>
+            <a href="#">Tin tức</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>đăng nhập</h3>
+            <input type="email" class="box" placeholder="Nhập email">
+            <input type="password" class="box" placeholder="Nhập password">
+            <input type="submit" value="đăng nhập" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">lưu đăng nhập</label>
+            <p>quên mật khẩu? <a href="#">nhấn vào đây</a></p>
+            <p>bạn chưa có tài khoản? <a href="#">đăng kí ngay</a></p>
+        </form>
+
+    </div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>những chuyến đi là đáng giá</h3>
+            <p>khám phá những địa điểm mới, cuộc vui đang chờ đợi bạn</p>
+            <a href="#sanpham" class="btn">Khám phá thêm</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="video/honda.mp4"></span>
+            <span class="vid-btn" data-src="video/Honda VISION.mp4"></span>
+            <span class="vid-btn" data-src="video/Air Blade.mp4"></span>
+            <span class="vid-btn" data-src="video/yamaha.mp4"></span>
+            <span class="vid-btn" data-src="video/YAMAHA1.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="video/honda.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+
+    <section class="product" id="sanpham">
+
+        <h1 class="heading">
+            <span>s</span>
+            <span>ả</span>
+            <span>n</span>
+            <span>p</span>
+            <span>h</span>
+            <span>ẩ</span>
+            <span>m</span>
+            <span>n</span>
+            <span>ổ</span>
+            <span>i</span>
+            <span>b</span>
+            <span>ậ</span>
+            <span>t</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/Honda Lead 2022 Smart Key.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-motorcycle"></i> Honda Lead 2022 </h3>
+                    <p>Honda Lead 2022 được trang bị khối động cơ 125cc ESP thế hệ thứ 2, 
+                        hệ thống kiểm soát hơi xăng EVAPO, cơ chế ngắt động cơ tạm thời Idling Stop, bộ đề tích hợp ACG và hệ thống phanh hỗ trợ Combi Brake an toàn cho người lái.</p>
+                    <div class="price"> 40.520.000 VNĐ <span>41.520.000 VNĐ</span> </div>
+                    <a href="#" class="btn">mua ngay</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Honda SH Mode 2022.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-motorcycle"></i> Honda SH Mode 2022 </h3>
+                    <p>Honda SH Mode 2022 phiên bản ABS/CBS là mẫu mới đã được chính thức bán ra thị trường Việt Nam. SH Mode 2022 sẽ có sự thay đổi toàn diện từ ngoại thất, tiện ích xe, khung sườn cho đến động cơ xe thế hệ mới mạnh mẽ</p>
+                    <div class="price"> 57.500.000 VNĐ <span>58.500.000 VNĐ</span> </div>
+                    <a href="#" class="btn">mua ngay</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Honda PCX 2022.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-motorcycle"></i> Honda PCX 2022 </h3>
+                    <p>Honda PCX 2022 bao gồm phiên bản 150cc và 125cc với thiết kế hoàn toàn mới như đèn pha LED, đèn hậu LED cách điệu chữ X, đồng hồ Full TFT LCD cùng mâm thiết kế mới và kiểu dáng thiết kế tổng thể sang trọng thể thao hơn.</p>
+                    <div class="price"> 72.000.000 VNĐ <span>73.000.000 VNĐ</span> </div>
+                    <a href="#" class="btn">mua ngay</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Honda Air Blade 2022.png" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-motorcycle"></i> Honda Air Blade 2022 </h3>
+                    <p>Mẫu xe Scooter Air Blade 2022 mới nhất của Honda mang thiết kế hiện đại với khối động cơ 150cc hoàn toàn mới, kiểu dáng bên ngoài mang phong cách thể thao hơn, khẳng định cá tính mạnh mẽ và trẻ trung cho người sở hữu.</p>
+                    <div class="price"> 40.300.000 VNĐ <span>41.300.000 VNĐ</span> </div>
+                    <a href="#" class="btn">mua ngay</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Click 125i 2022.png" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-motorcycle"></i> Click 125i 2022 </h3>
+                    <p>Click 125i mới sẽ mang thiết kế thể thao hơn, bảng đồng hồ điện tử Full LCD hiển thị TFT, động cơ xilanh đơn 125 phân khối, công nghệ eSP và phun xăng điện tử Fi đã được tối ưu.</p>
+                    <div class="price"> 61.000.000 VNĐ <span>62.000.000 VNĐ</span> </div>
+                    <a href="#" class="btn">mua ngay</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Yamaha Janus 2022.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-motorcycle"></i> Yamaha Janus 2022 </h3>
+                    <p>Sản phẩm sử dụng nhiều công nghệ hiện đại như sở hữu khối động cơ Blue Core 4 thì, cam đơn SOHC cùng dung tích 125 phân khối, công nghệ phun xăng điện tử và hệ thống truyền động CVT.</p>
+                    <div class="price"> 26.990.000 VNĐ <span>27.990.000 VNĐ</span> </div>
+                    <a href="#" class="btn">mua ngay</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Honda Winner X 2022.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-motorcycle"></i> Honda Winner X 2022 </h3>
+                    <p>Honda Winner X 2022 là một trong những mẫu xe máy Honda sắp ra mắt 2022, đây là mẫu xe côn tay được nhất nhiều người mong đợi, trang bị thêm khối động cơ hoàn toàn mới cho Winner X.</p>
+                    <div class="price"> 45.090.000 VNĐ <span>46.090.000 VNĐ</span> </div>
+                    <a href="#" class="btn">mua ngay</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Vespa Elettrica Red 2022.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-motorcycle"></i> Vespa Elettrica Red 2022 </h3>
+                    <p>Vespa Elettrica Red sẽ được các nhà sản xuất loại bỏ hoàn toàn lớp sơn bạc đặc biệt, thay vào đó sẽ khoác lên mình lớp áo màu đỏ, Vespa Elettrica Red được thiết kế vành bánh xe sơn đỏ với viền kim cương.</p>
+                    <div class="price"> 169.000.000 VNĐ <span>170.000.000 VNĐ</span> </div>
+                    <a href="#" class="btn">mua ngay</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Exciter 155 2022.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-motorcycle"></i> Exciter 155 2022 </h3>
+                    <p>Phiên bản Exciter 155 2022 này sẽ được cải tiến, nâng cấp và thay đổi nhiều chi tiết động cơ cùng thiết kế dựa trên các công nghệ hiện đại hơn.</p>
+                    <div class="price"> 43.500.000 VNĐ <span>44.500.000 VNĐ</span> </div>
+                    <a href="#" class="btn">mua ngay</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/Aerox 155 2022.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-motorcycle"></i> Aerox 155 2022 </h3>
+                    <p>Aerox 155 2022 là phiên bản xe máy sắp ra mắt 2022 đến từ hãng xe Yamaha. Sản phẩm gây ấn tượng với ngoại hình vô cùng mới mẻ, hiện đại.</p>
+                    <div class="price"> 47.750.000 VNĐ <span>48.750.000 VNĐ</span> </div>
+                    <a href="#" class="btn">mua ngay</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>b</span>
+            <span>ả</span>
+            <span>o</span>
+            <span>h</span>
+            <span>à</span>
+            <span>n</span>
+            <span>h</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>thời hạn bảo hành</h3>
+                <p>Chế độ bảo hành chung cho tất cả các sản phẩm là 2 năm hoặc 30.000 km tùy theo điều kiện nào đến trước.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-book"></i>
+                <h3>thủ tục bảo hành</h3>
+                <p>Xin quý khách mang theo thẻ chủ quyền xe kèm theo cuốn sổ bảo hành đến các đại lý hoặc cửa hàng phục vụ được chỉ định để được kiểm tra và sửa chữa.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-wrench"></i>
+                <h3>phạm vi bảo hành</h3>
+                <p>Trong thời gian bảo hành, các sai sót về kỹ thuật chế tạo hoặc lắp ráp đều được sửa chữa miễn phí với điều kiện quý khách đã có đến các đại lý hoặc Cửa hàng dịch vụ sửa chữa được chỉ định.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-screwdriver"></i>
+                <h3>quy định bảo hành</h3>
+                <p>Không miễn phí cho những dịch vụ bảo dưỡng thông thường. Bất kỳ những hỏng hóc do kém bảo dưỡng cũng không được bảo hành.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-money-check "></i>
+                <h3>bảo hành miễn phí</h3>
+                <p>Thời gian bảo hành 3 tháng hoặc 3.000 km.<br>Thời gian bảo hành 1 năm hoặc 12.000 km.<br>Thời gian bảo hành 2 năm hoặc 30.000 km.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-money-check-dollar"></i>
+                <h3>không được bảo hành miễn phí</h3>
+                <p>Không thực hiện đầy đủ việc bảo dưỡng xe định kỳ theo km được công ty quy định.<br>Các hư hỏng do thiên tai hoặc do va chạm khi sử dụng.<br>Phai màu tự nhiên của các bộ phận sơn và xi mạ.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="review" id="review">
+
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+
+        <div class="swiper-container review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/person-icon1.png" alt="">
+                        <h3>nguyễn văn a</h3>
+                        <p>sản phẩm tuyệt vời</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/person_icon_2.png" alt="">
+                        <h3>nguyễn văn b</h3>
+                        <p>sản phẩm tuyệt vời</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/person_icon_3.png" alt="">
+                        <h3>nguyễn văn c</h3>
+                        <p>sản phẩm tuyệt vời</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/person_icon_4.png" alt="">
+                        <h3>nguyễn văn d</h3>
+                        <p>sản phẩm tuyệt vời</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">
+            <span>l</span>
+            <span>i</span>
+            <span>ê</span>
+            <span>n</span>
+            <span>h</span>
+            <span>ệ</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="Tên">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="Số điện thoại">
+                    <input type="text" placeholder="Địa chỉ">
+                </div>
+                <textarea placeholder="Lời nhắn" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="Gửi">
+            </form>
+
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>nhóm xml và ứng dụng</p>
+            </div>
+            <div class="box">
+                <h3>Liên kết</h3>
+                <a href="#">trang chủ</a>
+                <a href="#">Giới thiệu</a>
+                <a href="#">bảng giá xe máy</a>
+                <a href="#">dịch vụ</a>
+                <a href="#">tin tức</a>
+                <a href="#">liên hệ</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">github</a>
+                <a href="#">zalo</a>
+                <a href="#">youtube</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> <span> nhóm xml 2022 </span> | ©2022 xml và ứng dụng </h1>
+
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
